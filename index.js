@@ -3,7 +3,6 @@ const dotenv = require('dotenv')
 const cors = require('cors')
 const connect = require('./config/db')
 const { globalLimiter } = require('./middlewares/rateLimiter')
-const { handleWebhook } = require('./controllers/subscriptionController')
 
 dotenv.config()
 connect()
